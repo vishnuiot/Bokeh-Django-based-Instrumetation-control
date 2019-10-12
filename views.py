@@ -3,6 +3,7 @@
 from django.http import HttpResponse
 import serial
 ser = serial.Serial('/dev/ttyUSB0',9600)
+ser = serial.Serial('/dev/ttyUSB0',15200)
  
 def index(request):
     return HttpResponse("""<h1>Project Server</h1>
